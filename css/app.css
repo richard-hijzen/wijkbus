@@ -169,23 +169,30 @@ footer .opening {
         width: 100%;
     }
 
+    .logo #logo {
+        width: 75%;
+        margin-left: 20px;
+    }
+
     .nav {
         z-index: 10;
-        height: 100%;
         background-color: #fff;
         width: 300px;
         position: absolute;
+        top: 0px;
         overflow: hidden;
         /* This trasform moves the drawer off canvas. */
-        -webkit-transform: translate(-300px, -420px);
-        transform: translate(-300px, -420px);
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
         /* Optionally, we animate the drawer. */
         transition: transform 0.3s ease;
     }
 
     .nav.open {
-        -webkit-transform: translate(0, -420px);
-        transform: translate(0, -420px);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        position: absolute;
+        top: 10px;
     }
 
     .navItem {
@@ -213,7 +220,6 @@ footer .opening {
         grid-auto-rows: auto;
     }
 
-
 }
 
 @media screen and (min-width: 651px) and (max-width: 900px) {
@@ -231,8 +237,6 @@ footer .opening {
     }
 
 }
-
-
 
 @media screen and (min-width: 901px) {
 
