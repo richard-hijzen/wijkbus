@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wijkbus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/logo4.svg" alt="Vereniging Wijkbus Groot-IJsselmonde">
+                    <img id="logo" src="images/logo3.svg" alt="Vereniging Wijkbus Groot-IJsselmonde">
+                </picture>
+                <a id="menu" class="headerMenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="headerphoto">
+                <img src="images/bussen.jpg" alt="Wijkbussen">
+            </div>
+            <nav id="drawer" class="nav">
+                <ul>
+                    <a href="index.html"><li class="navItem" id="blue">Home</li></a>
+                    <a href="voorwie.html"><li class="navItem" id="orange">Voor wie</li></a>
+                    <a href="prijzen.html"><li class="navItem" id="green">Prijzen</li></a>
+                    <a href="contact.html"><li class="navItem" id="yellow">Contact</li></a>
+                    <a href="fotogalerij.html"><li class="navItem" id="purple">Foto's</li></a>
+                    <a href="nieuws.html"><li class="navItem" id="red">Nieuws</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="mainContent">
+                    <h2>Voor wie</h2>
+                    <p>U woont in Groot-IJsselmonde, Lombardijen of de Beverwaard.</p>
+
+                    <p>Iedereen vanaf 55 jaar en minder validen kunnen gebruik maken van de wijkbus.
+                       Voor allerlei activiteiten, zoals een bezoek aan de kapper of boodschappen doen,
+                       maar ook voor bezoek aan familie, ziekenhuisbezoek, buurthuizen, dagopvang en projecten.</p>
+                    <p>Klik hier voor abonnementen en ritprijzen</p>
+                    
+                    <h3>Werkwijze</h3>
+                    <ul>
+                        <li>
+                            Door het aanmeldingsformulier in te vullen en op te sturen, of aanmelding via onze website bent 
+                            u deelnemer en kunt u direct gebruik maken van de wijkbus.
+                        </li>
+                        <li>
+                            Uw rit reserveren kan tot 14 dagen vooruit.
+                        </li>
+                        <li>
+                            Een begeleider kan tegen betaling meereizen.
+                        </li>
+                        <li>
+                            Uw gereserveerde rit en ophaaltijd kan in verband met het optimaal plannen aangepast worden, 
+                            vooraf wordt u door ons hierover geïnformeerd
+                        </li>
+                        <li>
+                            Wij vragen u 15 minuten voor de afgesproken tijd gereed te staan.
+                        </li>
+                        <li>
+                            Een rollator of rolstoel kan mee.
+                        </li>
+                        <li>
+                            In de bus betaalt u aan de chauffeur/bijrijder per rit het verschuldigde ritbedrag.
+                        </li>
+                        <li>
+                            Het dragen van de veiligheidsgordel in de wijkbus is verplicht.
+                        </li>
+                        <li>
+                            Indien u te laat een verhindering doorgeeft en/of de bus komt voor niets, worden de
+                            kosten voor de rit in rekening gebracht.
+                        </li>
+                        <li>
+                            Wij rijden ma t/m vrij van 08:30 tot 16:00 uur
+                        </li>
+                    </ul>
+                    <p class="last">
+                        Wilt u uzelf aanmelden als klant? Dat kan! Hieronder staat het inschrijfformulier.
+                        uw gegevens worden meteen in ons bestand gezet. Wanneer uw gegevens en/of
+                        die van uw partner in ons bestand zitten, krijgt u automatisch een melding van
+                        ons, zodat u zo snel mogelijk gebruik kan maken van onze service.
+                    </p>  
+                </div>
+            </section>   
+        </main>
+        
+        <footer>
+                <div class="address">
+                    <h3>Adres Gegevens</h3>
+                    <p>Grote Hagen 98</p>
+                    <p>3078 RC Rotterdam</p>
+                </div>
+                <div class="opening">
+                    <p>Wij zijn telefonisch bereikbaar tussen 8:30 en 16:00 op de volgende nummers 
+                        010-4795404 of 010-4191020.
+                    </p>
+                </div>
+            </footer>
+    </div>
+    <script>
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>
