@@ -92,7 +92,7 @@ main section .mainContent {
 main section .mainContent h2 {
     align-self: center;
     font-size: 1.9rem;
-    margin: 15px 0px;
+    margin: 15px 10px;
 }
 
 main section .mainContent p {
