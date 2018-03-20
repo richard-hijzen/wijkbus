@@ -1,0 +1,260 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
+}
+
+.logo #logo {
+    width: 100%;
+}
+.headerphoto img {
+    display: flex;
+    object-fit: cover;
+    max-height: 350px;
+    width: 100%;
+}
+
+.headerMenu{
+    display: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a li:hover {
+    font-size: 2.2rem;
+}
+
+nav ul li {
+    display: grid;
+    justify-content: center;
+    font-size: 2rem;
+    height: 70px;
+    font-family: 'Calibri', sans-serif;
+    color: #1d1d1d;
+    align-content: center;
+}
+
+nav ul li#blue {
+    background: #8585ee;
+}
+
+nav ul li#orange {
+    background: #e4aa41;
+}
+
+nav ul li#green {
+    background: #59cf59;
+}
+
+nav ul li#yellow {
+    background: #d3f14e;
+}
+
+nav ul li#purple {
+    background: #f16bdb;
+}
+
+nav ul li#red {
+    background: #dd5252;
+}
+
+/*
+/   MAIN content
+*/
+main section .mainContent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main section .mainContent h2 {
+    align-self: center;
+    font-size: 1.9rem;
+    margin: 15px 0px;
+}
+
+main section .mainContent p {
+    font-size: 1.4rem;
+    margin: 5px 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*
+/   Section last updates
+*/
+
+section.lastUpdates .headerUpdates {
+    height: 50px;
+    background: #3cabda;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 1.3rem;
+}
+
+section.lastUpdates {
+    background: #e9e9e9;
+    padding-bottom: 10px;
+}
+
+section.lastUpdates article {
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.12);
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+article .articleImage {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+section.lastUpdates article h3 {
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+section.lastUpdates article p {
+    line-height: 135%;
+    padding: 0px 10px 20px 10px;
+}
+
+footer {
+    background: #2b2b2b;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .address {
+    width: 35%;
+    padding: 15px;
+}
+
+footer .opening {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+}
+
+@media screen and (max-width: 650px) {
+    container {
+        width: 100%;
+    }
+
+    .nav {
+        z-index: 10;
+        height: 100%;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        overflow: hidden;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, -420px);
+        transform: translate(-300px, -420px);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+
+    .nav.open {
+        -webkit-transform: translate(0, -420px);
+        transform: translate(0, -420px);
+    }
+
+    .navItem {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+      }
+
+    .headerMenu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+    }
+
+    .headerMenu svg{
+        width: 32px;
+        fill: #E0E0E0;
+    }
+
+    section.lastUpdates .articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+    nav ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto;
+    }
+
+    section.lastUpdates .articles {
+        display: grid;
+        grid-template-columns:  repeat(2, 50%);
+        grid-auto-rows: auto;
+    }
+
+}
+
+
+
+@media screen and (min-width: 901px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .logo picture {
+        width: 100%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: auto;
+    }
+    
+    section.lastUpdates .articles {
+        display: grid;
+        grid-template-columns:  repeat(3, 33.3%);
+        grid-auto-rows: auto;
+    }
+   
+}

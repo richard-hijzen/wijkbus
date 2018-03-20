@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wijkbus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/logo4.svg">
+                    <img id="logo" src="images/logo3.svg" alt="logo">
+                </picture>
+                <a id="menu" class="headerMenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="headerphoto">
+                <img src="images/bussen.jpg" alt="Wijkbussen">
+            </div>
+            <nav id="drawer" class="nav">
+                <ul>
+                    <a href=""><li class="navItem" id="blue">Home</li></a>
+                    <a href=""><li class="navItem" id="orange">Over Ons</li></a>
+                    <a href=""><li class="navItem" id="green">Aanmelden</li></a>
+                    <a href=""><li class="navItem" id="yellow">Contact</li></a>
+                    <a href=""><li class="navItem" id="purple">Foto's</li></a>
+                    <a href=""><li class="navItem" id="red">Nieuws</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="mainContent">
+                    <h2>Betrouwbaar vervoer in uw buurt</h2>
+                    <p>
+                        Wijkbus Groot-IJsselmonde verzorgt persoonlijk en veilig aanvullend vervoer in uw wijk.
+                    </p>
+                    <p>
+                        Iedereen vanaf 55 jaar en minder validen kunnen gebruik maken van de wijkbus. Voor allerlei activiteiten,
+                         zoals een bezoek aan de kapper of boodschappen doen, maar ook voor bezoek aan familie, ziekenhuisbezoek,
+                          buurthuizen, dapopvang en projecten.
+                    </p>
+                    <p>
+                        Bij de wijkbus werken enthousiaste vrijwilligers die dagelijks het vervoer voor u verzorgen.
+                         Weet u iemand die ons team kan komen versterken? Wij zoeken chauffeurs en kantoormedewerkers.
+                    </p>
+                </div>
+            </section>
+
+            <section class="lastUpdates">
+                <div class="headerUpdates">
+                    <h2>Laatste Updates</h2>
+                </div>
+                <div class="articles">
+                    <article>
+                        <div class="header">
+                            <h3>Nieuws uit de ALV</h3>
+                        </div>
+                        <img src="" alt="">
+                        <p class="intro">
+                            Algemene ledenvergadering van 27 september 2017
+                        </p>
+                    </article>
+                    <article>
+                        <img class="articleImage" src="images/boottocht.jpg" alt="boottocht">
+                        <div class="header">
+                            <h3>Boottocht</h3>
+                        </div>
+                        <p class="intro">
+                            Op zaterdag 19 augustus reden er zes bussen met vijftig personen naar Drimmelen voor een boottocht in
+                            de Biesbosch. Dat werd een groot succes.
+                        </p>
+                    </article>
+                    <article>
+                        <div class="header">
+                            <h3>Medewerkersavond</h3>
+                        </div>
+                        <img src="" alt="">
+                        <p class="intro">
+                            Op zaterdag 1 juli was er een gezellige medewerkersavond. Er werd afscheid genomen van twee fantasische 
+                            vrijwilligers: Henk Leenvaar en Aad van rijswijk.
+                        </p>
+                        
+                    </article>
+                    <article>
+                        <div class="header">
+                            <h3>Nogmaals lidmaatschapsgeld 2017</h3>
+                        </div>
+                        <img src="" alt="">
+                        <p class="intro">
+                            Nog zo'n 250 leden hebben geen gehoor gegeven aan ons verzoek zoals dat te lezen was in de ledenbrief 
+                            van 
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="address">
+                <h3>Adres Gegevens</h3>
+                <p>Grote Hagen 98</p>
+                <p>3078 RC Rotterdam</p>
+            </div>
+            <div class="opening">
+                <p>Wij zijn telefonisch bereikbaar tussen 8:30 en 16:00 op de volgende nummers 
+                    010-4795404 of 010-4191020.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+            menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+    </script>
+</body>
+</html>
