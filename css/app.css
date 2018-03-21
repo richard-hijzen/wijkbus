@@ -310,7 +310,7 @@ footer .opening {
 
 }
 
-@media screen and (min-width: 651px) and (max-width: 900px) {
+@media screen and (min-width: 650px) and (max-width: 900px) {
     nav ul {
         list-style: none;
         display: grid;
@@ -326,7 +326,7 @@ footer .opening {
 
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 900px) {
 
     .container {
         width: 80%;
